@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhập vào số có 4 chữ số");
+
+        let unitRow = a%10;
+        let dozens = Math.floor(a/10)%10;
+        let hundreds = Math.floor(a/100)%10;
+        let thousands = Math.floor(a/1000);
+
+        console.log(`Số hàng nghìn: ${thousands}\n
+Số hàng trăm: ${hundreds}\n
+Số hàng chục:${dozens}\n
+Số hàng đơn vị:${unitRow}`);
+
+document.write(`Số hàng nghìn: ${thousands}\n
+Số hàng trăm: ${hundreds}\n
+Số hàng chục:${dozens}\n
+Số hàng đơn vị:${unitRow}`);
+    </script>
+</body>
+</html>

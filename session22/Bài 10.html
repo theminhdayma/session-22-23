@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Nhập giá trị");
+
+        if (a) { // kiểm tra xem a có phải là giá trị hay không
+            //Nó gần giống với kiểu giá trị boolean 
+            // miễn giá trị nhập không phải là 
+            // + Boolean false
+            // + giá trị số 0
+            // + Gía trị null ( rỗng)
+            // + giá trị undefined (kh được gán nên kh có giá trị)
+            // + Gía trị NaN (Not a Number)
+            // ví dụ như các phép tính : 10/0
+                                   // "abc" *3
+                                   // `Hello` + 10
+            console.log("Giá trị đã nhập là truthy");
+        } else {
+            console.log("Giá trị đã nhập là falsy");
+        }
+    </script>
+</body>
+</html>

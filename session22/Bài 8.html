@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhập số thứ nhất");
+        let b = +prompt("Nhập số thứ hai");
+        let c = prompt("Nhập vào phép tính");
+
+        if(c!=='+' && c!=='-' && c!=='*' && c!=='/'){
+            console.log(`dấu ${c} không hợp lệ`);
+        }else{
+            let ketQua;
+            if(c==='+'){
+                ketQua = a+b;
+            }else if(c==='-'){
+                ketQua = a-b;
+            }else if(c==='*'){
+                ketQua = a*b;
+            }else{
+                ketQua = a/b;
+            }
+            console.log(`Kết quả của phép tính là ${ketQua}`);
+        }
+    </script>
+</body>
+</html>

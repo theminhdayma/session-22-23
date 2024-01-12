@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ax^2 + bx + c =0
+        let a = +prompt("Nhập a");
+        let b = +prompt("Nhập b");
+        let c = +prompt("Nhập c");
+
+        let denta = (b**2)-4*a*c;
+        
+        if(a===0 && b===0 && c===0){
+            console.log("Phương trình vô số nghiệm");
+        }else if(denta>0){
+            let x1 = (-b + Math.sqrt(denta)) / (2*a);
+            let x2 = (-b - Math.sqrt(denta)) / (2*a);
+            console.log(`Phương trình có 2 nghiệm phân biệt là:\n
+            x1 = ${x1}\n
+            x2 = ${x2}`);
+        }else if(denta===0){
+            let x =  -b/(2*a);
+            console.log(`Phương trình có 1 nghiệm kép là x = ${x}`);
+        }else{
+            console.log("Phương trình vô nghiệm");
+        }
+    </script>
+</body>
+</html>

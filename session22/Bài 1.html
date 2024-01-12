@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhập a");
+        let b = +prompt("Nhập b");
+        
+        if(a===b){
+            console.log("cả 2 số đều chia hết cho nhau");
+        }else if(a%b===0){
+            console.log(`${a} chia hết cho ${b}`);
+        }else if(b%a===0){
+            console.log(`${b} chia hết cho ${a}`)
+        }else{
+            console.log("Không số nào chia hết cho số nào");
+        }
+    </script>
+</body>
+</html>

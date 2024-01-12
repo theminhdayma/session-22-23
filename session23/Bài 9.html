@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = +prompt("Nhập một số ngẫu nhiên");
+        let arr = [0, 1]; //khai báo mảng có 2 phần tử 0 và 1
+        let sum = 1; //Biến tổng của 2 số cuối cùng trong mảng
+
+        if(number > 0){
+            while(sum<number){ // lặp lại cho đến khi tổng 2 số cuối cùng >= số nhập vào
+                let newNumber = arr[arr.length - 1] + arr[arr.length - 2]; //arr.length là số cuối cùng trong mảng
+                arr.push(newNumber); //Thêm phần tử newumber vào cuối mảng 
+                sum =+ newNumber; //Tổng của 2 số cuối trong mảng
+            }
+            console.log("Dãy fibonacci là: ");
+            console.log(arr); // Hiển thị tất cả các phẩn tử trong mảng arr
+        }else{
+            console.log(`Số ${number} không hợp lệ`);
+        }
+    </script>
+</body>
+</html>
